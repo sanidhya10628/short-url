@@ -13,22 +13,15 @@ app.get('/', (req,res) => {
     res.render('index');
 })
 
-app.post('/',(req,res) => {
+
+app.post('/short', (req,res) => {
     const {url} = req.body;
     const prev = url;
     shortUrl.short(url, function(err, url){
         res.render('short-url',{prev:prev,url:url});
-        // res.redirect('/sh');
-    })
+
+    });    
 })
-// app.post('/short', (req,res) => {
-//     const {url} = req.body;
-//     const prev = url;
-//     shortUrl.short(url, function(err, url){
-//         res.render('short-url',{prev:prev,url:url});
-//         // res.redirect('/sh');
-//     });    
-// })
 app.listen(8000,() => {
     console.log("On Port 8000");
 })
