@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 237, 237);
+}
+.container{
+    text-align: center;
+}
+.container h1{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container span{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 5px;
+    
+}
+.container a{
+    text-decoration: none;
+    /* margin: 100px 0px; */
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.url{
+    margin-bottom: 10px;
+}

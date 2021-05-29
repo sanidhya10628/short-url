@@ -19,7 +19,7 @@ app.post('/short', (req,res) => {
     const prev = url;
     shortUrl.short(url, function(err, url){
         res.render('short-url',{prev:prev,url:url});
-
+        
     });    
 })
 app.listen(8000,() => {
