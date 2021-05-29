@@ -6,14 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Short Url</title>
+    <link rel="stylesheet" href="/app.css">
 </head>
 
 <body>
-    <h1>Short Your Url here!...</h1>
-    <form action="/shorten-url" method="POST">
-        <input type="text" name="url">
-        <button type="submit">Submit</button>
-    </form>
+    <div class="container">
+        <h1>Short Your Url here!...</h1>
+        <form action="/" method="POST">
+            <label for="url">Enter Your Url:</label>
+            <input type="text" name="url">
+            <button type="submit" id="btn">Submit</button>
+        </form>
+        <br>
+
+
+
+    </div>
+    <script src="/script.js"></script>
 </body>
 
 </html>
